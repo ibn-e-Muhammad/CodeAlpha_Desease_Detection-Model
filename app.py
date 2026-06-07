@@ -9,7 +9,7 @@ st.set_page_config(page_title="AI Diagnostic Symptom Screener", layout="centered
 
 @st.cache_resource
 def load_assets():
-    base_dir = r"d:\Code\Projects\Internships\CodeAlpha\CodeAlpha_Desease_Detection-Model"
+    base_dir = os.path.dirname(os.path.abspath(__file__))
     models_dir = os.path.join(base_dir, "models")
     processed_dir = os.path.join(base_dir, "pipeline_tabular", "data", "processed")
     
